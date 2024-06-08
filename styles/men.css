@@ -65,10 +65,6 @@ main {
 .container {
     width: 100%;
     margin: 20px 0;
-    display: grid;
-    grid-template: repeat(3, auto) / 1fr;
-    grid-gap: 0;
-    justify-items: center;
 }
 
 .container #top_main h2,
@@ -78,152 +74,21 @@ main section h2 {
     text-align: center;
 }
 
-.container figure {
-    margin: 0px;
-}
-
-.container figure img {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* the styles for the section */
-section {
-    width: 100%;
-}
-
-.feature .products {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.products .product-block {
-    width: 22%;
-    padding: 1.5%;
-    padding-bottom: 20px;
-}
-
-.product-block img {
-    width: 100%;
-    max-width: 275px;
-}
-
-/* the styles for the banner */
-.champa-rewards-banner {
-    margin-top: 50px;
-    width: 100%;
-    height: 300px;
-    position: relative;
-}
-
-.banner-container {
-    max-width: 1150px;
-    margin: 0 auto;
-}
-
-.banner-container .champa-rewards-banner-content {
-    height: 300px;
-    background-color: #f1f5f9;
-}
-
-.champa-rewards-banner-heading-text {
-    text-align: center;
-    padding: 50px 0 40px;
-    color: #2f353d;
-    font-size: 30px;
-}
-
-.champa-rewards-banner-assets {
-    width: 100%;
-    display: flex;
-}
-
-.banner-img img {
-    margin-top: 16px;
-    margin-left: 60px;
-    max-width: 70px;
-}
-
-.rewards-banner-desc-text {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    margin: 0;
-}
-
-.custom-banner-desc {
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.rewards-banner-info {
-    font-size: 20px;
-}
-
-.custom-login {
-    width: 100%;
-    margin-top: 20px;
-}
-
-a.custom-login {
-    border: 1px solid;
-    border-color: blue;
-    padding: 10px;
-    max-width: 70%;
-    text-align: center;
-}
-
-.product-service {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
-    padding-left: 80px;
-    padding-bottom: 20px;
-}
-
-.product-service-single {
-    text-align: center;
-    padding: 0 30px;
-}
-
-.product-service-single a {
-    display: flex;
-    flex-direction: column;
-}
-
-.product-service-single img {
-    margin: 0 auto;
-    max-width: 48px;
-}
-
-.product-service-single span {
-    font-size: 11px;
-}
 
 /* the styles for the popular item */
-main #heading {
-    padding: 1rem 0;
-}
-.popular {
-    width: 100%;
-}
-
 .custom-product-grid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     column-gap: 10px;
-    height: 100%;
+    height: auto;
 }
 
 .custom-product-grid-item {
     display: flex;
-    flex-wrap: nowrap;
-    padding: 16px;
-    width: 100%;
+    padding: 0.7rem;
+    margin: .5rem 0;
+    max-width: 22%;
     height: 100%;
     flex-direction: column;
     border: 1px solid #e4e7eb;
@@ -235,7 +100,6 @@ main #heading {
 .custom-product-grid-item img {
     width: 100%;
     max-width: 256px;
-    padding-bottom: 16px;
 }
 
 .popular-product-content {
@@ -246,23 +110,17 @@ main #heading {
 }
 
 .popular-product-info {
+    padding: 0.4rem 0;
     font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.product-code {
-    font-size: 14px;
-    margin-bottom: 4px;
-    color: #6b6b7b;
 }
 
 .custom-product-available-size {
-    margin: 15px 0;
+    padding: 0.4rem 0;
     font-size: 1rem;
 }
 
 .custom-product-price {
-    margin: 8px 0 4px;
+    padding: 0.4rem 0;
     font-size: 18px;
     font-weight: bold;
 }
@@ -275,7 +133,7 @@ main #heading {
     width: 100% !important;
     border: 1px solid;
     border-color: blue;
-    padding: 10px;
+    padding: .7rem;
     color: blue;
 }
 
